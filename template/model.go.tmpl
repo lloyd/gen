@@ -8,6 +8,11 @@ import (
     {{if .UseGuregu}} "github.com/guregu/null" {{end}}
 	"gorm.io/gorm"
 )
+var (
+  _ = uuid.UUID{}
+  _ = time.Time{}
+  _ = sql.NullBool{}
+)
 
 /*
 DB Table Details
